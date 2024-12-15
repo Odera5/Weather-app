@@ -18,11 +18,15 @@ function processJson(result) {
 
 //user input
 const body = document.querySelector("body");
+const h3 = document.createElement("h3");
+h3.textContent = "Check The Weather Condition of your State";
 const label = document.createElement("label");
-label.textContent = "input your location";
+label.textContent = "Input your location";
 const input = document.createElement("input");
+body.appendChild(h3);
 body.appendChild(label);
 body.appendChild(input);
+
 const btn = document.createElement("button");
 btn.textContent = "submit";
 body.appendChild(btn);
